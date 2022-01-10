@@ -3,7 +3,7 @@ all: singleton
 # ======================
 # creational
 
-.PHONY: singleton prototype factory builder
+.PHONY: singleton prototype factory abstractfactory builder
 
 singleton:
 	cd ./creational/singleton && go run .
@@ -13,6 +13,9 @@ prototype:
 
 factory:
 	cd ./creational/factory && go run .
+
+abstractfactory:
+	cd ./creational/abstractfactory && go run .
 
 builder:
 	cd ./creational/builder && go run .
