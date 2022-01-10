@@ -1,4 +1,4 @@
-all: singleton
+all: singleton prototype factory abstractfactory builder
 
 # ======================
 # creational
