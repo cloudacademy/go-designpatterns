@@ -9,10 +9,10 @@ type iBuilder interface {
 
 func getBuilder(builderType string) iBuilder {
 	if builderType == "saturnv" {
-		return &saturnvBuilder{}
+		return newSaturnvBuilder()
 	}
 	if builderType == "electron" {
-		return &electronBuilder{}
+		return newElectronBuilder()
 	}
 	return nil
 }
