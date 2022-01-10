@@ -25,4 +25,6 @@ func main() {
 	fmt.Printf("Engine Type: %s\n", electron.engine)
 	fmt.Printf("Max speed: %d\n", electron.maxspeed)
 	fmt.Printf("Max speed: %d\n", electron.maxpayload)
+
+	fmt.Println()
 }

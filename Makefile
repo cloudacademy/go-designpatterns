@@ -1,4 +1,8 @@
-all: singleton prototype factory abstractfactory builder
+allcreational: singleton prototype factory abstractfactory builder
+
+allstructural: adapter
+
+all: allcreational allstructural
 
 # ======================
 # creational
