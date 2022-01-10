@@ -5,6 +5,7 @@ import "fmt"
 type saturnv struct {
 	maker   string
 	mission string
+	stages  []stage
 }
 
 func (r *saturnv) launch() {
@@ -13,7 +14,10 @@ func (r *saturnv) launch() {
 
 func (r *saturnv) clone() iRocket {
 	//complex cloning logic goes here
-	return &saturnv{maker: r.maker}
+	var stages []stage
+	stages = append(stages, r.stages...)
+
+	return &saturnv{maker: r.maker, stages: stages}
 }
 
 func (r *saturnv) setMission(mission string) {

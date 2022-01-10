@@ -5,6 +5,7 @@ import "fmt"
 type electron struct {
 	maker   string
 	mission string
+	stages  []stage
 }
 
 func (r *electron) launch() {
@@ -13,7 +14,9 @@ func (r *electron) launch() {
 
 func (r *electron) clone() iRocket {
 	//complex cloning logic goes here
-	return &electron{maker: r.maker}
+	var stages []stage
+	stages = append(stages, r.stages...)
+	return &electron{maker: r.maker, stages: stages}
 }
 
 func (r *electron) setMission(mission string) {
