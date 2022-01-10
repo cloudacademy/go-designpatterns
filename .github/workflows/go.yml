@@ -21,5 +21,3 @@ jobs:
     - name: Build
       run: |
         make all
-        mkdir release
-        cp out/bin/rocket-* release
