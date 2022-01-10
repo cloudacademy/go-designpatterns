@@ -19,3 +19,11 @@ abstractfactory:
 
 builder:
 	cd ./creational/builder && go run .
+
+# ======================
+# structural
+
+.PHONY: adapter
+
+adapter:
+	cd ./structural/adapter && go run .
