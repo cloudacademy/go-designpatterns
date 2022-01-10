@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Print("BUILDER Example:\n\n")
+
 	saturnvBuilder := getBuilder("saturnv")
 	electronBuilder := getBuilder("electron")
 

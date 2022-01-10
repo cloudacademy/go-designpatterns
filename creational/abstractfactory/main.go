@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Print("ABSTRACT FACTORY Example:\n\n")
+
 	nasaFactory, _ := getRocketFactory("nasa")
 	spacexFactory, _ := getRocketFactory("spacex")
 

@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Print("FACTORY Example:\n\n")
+
 	saturnv, _ := getRocket("saturnv")
 	electron, _ := getRocket("electron")
 	launch(saturnv)

@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Print("PROTOTYPE Example:\n\n")
+
 	satvStage1 := stage{name: "stage1"}
 	satvStage2 := stage{name: "stage2"}
 	satvStage3 := stage{name: "stage3"}
@@ -31,4 +33,5 @@ func main() {
 	for _, rocket := range missions {
 		rocket.launch()
 	}
+	fmt.Println()
 }
