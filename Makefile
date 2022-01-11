@@ -1,6 +1,6 @@
 allcreational: singleton prototype factory abstractfactory builder
 
-allstructural: adapter
+allstructural: adapter proxy
 
 all: allcreational allstructural
 
