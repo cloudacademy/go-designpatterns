@@ -31,3 +31,6 @@ builder:
 
 adapter:
 	cd ./structural/adapter && go run .
+
+proxy:
+	cd ./structural/proxy && go run .
