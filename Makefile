@@ -1,6 +1,6 @@
 allcreational: singleton prototype factory abstractfactory builder
 
-allstructural: adapter proxy
+allstructural: adapter proxy flyweight
 
 all: allcreational allstructural
 
@@ -34,3 +34,6 @@ adapter:
 
 proxy:
 	cd ./structural/proxy && go run .
+
+flyweight:
+	cd ./structural/flyweight && go run .
