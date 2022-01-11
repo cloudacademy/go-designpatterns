@@ -19,11 +19,11 @@ func main() {
 	devteam.add(buzz)
 	devteam.add(michael)
 
-	awsdevteam := &team{
+	sysintteam := &team{
 		name: "Systems Integration",
 	}
-	awsdevteam.add(neil)
-	awsdevteam.add(devteam)
+	sysintteam.add(neil)
+	sysintteam.add(devteam)
 
-	awsdevteam.printDetails()
+	sysintteam.printDetails()
 }
