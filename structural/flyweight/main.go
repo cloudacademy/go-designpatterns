@@ -5,6 +5,8 @@ import (
 )
 
 func main() {
+	fmt.Print("FLYWEIGHT Example:\n\n")
+
 	rocketSimulation := simulation{
 		name: "Launch Test",
 	}
@@ -13,4 +15,6 @@ func main() {
 
 	fmt.Printf("Starting %s\n", rocketSimulation.getName())
 	rocketSimulation.start()
+
+	fmt.Println()
 }
