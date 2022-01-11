@@ -1,6 +1,6 @@
 allcreational: singleton prototype factory abstractfactory builder
 
-allstructural: adapter proxy flyweight facade decorator
+allstructural: adapter proxy flyweight facade decorator composite
 
 all: allcreational allstructural
 
@@ -42,4 +42,7 @@ facade:
 	cd ./structural/facade && go run .
 
 decorator:
-	cd ./structural/decorator && go run .	
+	cd ./structural/decorator && go run .
+
+composite:
+	cd ./structural/composite && go run .
