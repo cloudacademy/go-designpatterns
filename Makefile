@@ -1,6 +1,6 @@
 allcreational: singleton prototype factory abstractfactory builder
 
-allstructural: adapter proxy flyweight facade decorator composite
+allstructural: adapter proxy flyweight facade decorator composite bridge
 
 all: allcreational allstructural
 
