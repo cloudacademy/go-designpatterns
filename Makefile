@@ -46,3 +46,6 @@ decorator:
 
 composite:
 	cd ./structural/composite && go run .
+
+bridge:
+	cd ./structural/bridge && go run .

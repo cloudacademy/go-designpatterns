@@ -1,6 +1,10 @@
 package main
 
+import "fmt"
+
 func main() {
+	fmt.Print("COMPOSITE Example:\n\n")
+
 	neil := &employee{name: "Neil Armstrong",
 		position: "Go Senior Developer",
 		manager:  true}
@@ -26,4 +30,6 @@ func main() {
 	sysintteam.add(devteam)
 
 	sysintteam.printDetails()
+
+	fmt.Println()
 }
