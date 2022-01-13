@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Print("ITERATOR Example:\n\n")
 
 	saturnv := &rocket{
 		name:       "SaturnV",
@@ -31,4 +32,6 @@ func main() {
 		rocket := itr.getNext()
 		fmt.Printf("Rocket %+v\n", rocket)
 	}
+
+	fmt.Println()
 }
