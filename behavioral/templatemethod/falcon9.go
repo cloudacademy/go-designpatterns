@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 type falcon9 struct {
-	rocket
 	fuel     int
 	maxSpeed int
 	minSpeed int
