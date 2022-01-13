@@ -2,7 +2,7 @@ allcreational: singleton prototype factory abstractfactory builder
 
 allstructural: adapter proxy flyweight facade decorator composite bridge
 
-allbehavioral: 
+allbehavioral: iterator templatemethod
 
 all: allcreational allstructural allbehavioral
 
@@ -55,11 +55,14 @@ bridge:
 # ======================
 # behavioral
 
-chainofresponsibility:
-	cd ./behavioral/chainofresponsibility && go run .
-
 iterator:
 	cd ./behavioral/iterator && go run .
+
+templatemethod:
+	cd ./behavioral/templatemethod && go run .
+
+chainofresponsibility:
+	cd ./behavioral/chainofresponsibility && go run .
 
 memento:
 	cd ./behavioral/memento && go run .
@@ -78,9 +81,6 @@ observer:
 
 strategy:
 	cd ./behavioral/strategy && go run .
-
-templatemethod:
-	cd ./behavioral/templatemethod && go run .
 
 visitor:
 	cd ./behavioral/visitor && go run .
