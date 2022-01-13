@@ -4,6 +4,9 @@ import "fmt"
 
 type falcon9 struct {
 	rocket
+	fuel     int
+	maxSpeed int
+	minSpeed int
 }
 
 func (r *falcon9) addFuel(amount int) {

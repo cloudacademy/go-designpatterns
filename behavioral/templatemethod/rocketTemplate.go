@@ -11,16 +11,13 @@ type irocket interface {
 }
 
 type rocket struct {
-	rocket   irocket
-	fuel     int
-	maxSpeed int
-	minSpeed int
+	irocket irocket
 }
 
 func (r *rocket) fly(fuel int, speed int) error {
-	r.rocket.addFuel(fuel)
-	if r.rocket.ignite() {
-		if r.rocket.throttleUp(speed) {
+	r.irocket.addFuel(fuel)
+	if r.irocket.ignite() {
+		if r.irocket.throttleUp(speed) {
 			return fmt.Errorf("speed wobbles encountered")
 		}
 	} else {

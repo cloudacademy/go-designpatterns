@@ -4,6 +4,9 @@ import "fmt"
 
 type saturnv struct {
 	rocket
+	fuel     int
+	maxSpeed int
+	minSpeed int
 }
 
 func (r *saturnv) addFuel(amount int) {
