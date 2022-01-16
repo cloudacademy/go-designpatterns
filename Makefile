@@ -2,9 +2,9 @@ allcreational: singleton prototype factory abstractfactory builder
 
 allstructural: adapter proxy flyweight facade decorator composite bridge
 
-allbehavioral: iterator templatemethod visitor
+allbehavioral: iterator templatemethod visitor strategy
 
-all: allcreational allstructural allbehavioral
+all: allcreational allstructural allbehavioral 
 
 # ======================
 # creational
