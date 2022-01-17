@@ -8,8 +8,9 @@ type falcon9 struct {
 }
 
 func (f *falcon9) launch() {
-	fmt.Println("blast off")
+	fmt.Println("engines on")
 	f.enginesOn = true
+	fmt.Println("blast off")
 }
 
 func (f *falcon9) land() {
